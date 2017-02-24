@@ -1,0 +1,31 @@
+<html>
+<body>
+   <hr/>
+    {%- for message in get_flashed_messages() %}
+        {{ message }}
+    {%- endfor %}
+    <a href="{{ url_for('new')}}">Add!!</a>
+    <table>
+        <thread>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Pin</th>
+        </tr>
+        </thread>
+        
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <td>{{ student.name }}</td>
+                <td>{{ student.city }}</td>
+                <td>{{ student.addr }}</td>
+                <td>{{ student.pin }}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+          </body></html>

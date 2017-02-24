@@ -1,0 +1,13 @@
+<html>
+<body>
+    <h1>{% if session_name %}Hi {{ session_name }} {% endif %} </h1>
+    
+    <h2>This is Home page, Teacher</h2>
+    <br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <br>
+    <a href="http://localhost:5000/signup">Sign Up</a>
+    <br>
+    <a href="{{ url_for('upload')}}">Upload</a>
+   </body>
+</html>

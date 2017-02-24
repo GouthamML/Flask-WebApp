@@ -1,0 +1,17 @@
+<html>
+<body>
+    <h1>{% if session_name %}Hi {{ session_name }} {% endif %} </h1>
+    
+    <h2>This is Home page, student</h2>
+    <br>
+    <form action="{{ url_for('search') }}" method="POST">
+            <p>Search </p> <input type="text" name="search" value="" />
+        <input type="submit" name="submit" value="Search" />
+        </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <br>
+    <a href="http://localhost:5000/signup">Sign Up</a>
+    <br>
+   
+   </body>
+</html>

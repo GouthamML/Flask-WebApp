@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <form action="{{ url_for('sformfill') }}" method="POST">
+           <p>Name</p> <input type="text" name="name" value="" /><br>
+            <p>Branch  </p>  <select name="branch">
+    <option value="IS">IS</option>
+    <option value="CS">CS</option>
+    <option value="EC">EC</option>
+            </select>
+              <br>
+          <p>Sem  </p>  <select name="sem">
+    <option value=1>I sem</option>
+    <option value=2>II sem</option>
+    <option value=3>III sem</option>
+    <option value=4>IV sem</option>
+    <option value=5>V sem</option>   
+    <option value=6>VI sem</option>
+    <option value=7>VII sem</option>
+    <option value=8>VIII sem</option>
+  </select><br>
+            <p>College</p><select name="clg">
+            <option value=dsce>DSCE</option>
+            <option value=bmsce>BMSCE</option>
+            <option value=rvce>RVCE</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+        
+            </body>
+</html>

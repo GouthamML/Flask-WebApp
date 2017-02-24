@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <body>
+            <form action="{{ url_for('check') }}" method="POST">
+                {{ form.csrf_token }}
+              {{ form.username.label }} {{ form.username() }}
+                
+                {{ form.password.label }} {{ form.password() }}
+              {{ form.submit() }}
+            </form>
+            <br>
+            <p>Register <a href="{{ url_for('signup') }}">here</a></p>
+                
+            
+        </body>
+    </head>
+</html>

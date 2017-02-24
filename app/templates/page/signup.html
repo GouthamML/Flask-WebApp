@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <body>
+            <form action="{{ url_for('add_db') }}" method="POST">
+                {{ form.csrf_token }}
+              {{ form.username.label }} {{ form.username() }}
+                {{ form.email.label }} {{ form.email() }}
+                {{ form.password.label }} {{ form.password() }}
+                <br>
+                
+                <br>
+                
+                {{ form.job }}
+                <br>
+              {{ form.submit() }}
+            </form>
+                
+            
+        </body>
+    </head>
+</html>
